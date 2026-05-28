@@ -237,6 +237,51 @@ All image files are stored in the same root layer as:
 
 No nested folders are used.
 
+## Commit 3 — Blood-Caste Vampire Homepage Lore Update
+
+### Purpose
+Adds the third Northern Arc enemy lore section to the RedShiftWyrm homepage.
+
+### Enemy
+**Blood-Caste Vampire**
+
+### Website Role
+The Blood-Caste Vampire follows the Grave-Tread Wraith and Wendigo in the Northern Arc escalation order. Where the Wraith establishes spiritual corruption and the Wendigo establishes physical survival horror, the Vampire establishes intelligent faction warfare.
+
+### Lore Function
+- Intelligent humanoid blood-predator
+- Organized Blood-Caste civilization
+- Hemogem blood reservoir / magic focus
+- Blood-thread manipulation
+- Blood needles, blood guards, blood sigils, and wound-pull lines
+- Long-legged uncanny speed
+- Caste regalia and authority jewelry
+- Tactical retreat and information warfare
+- Zeravyr-focused encounter
+- Tests Zeravyr’s fire, gravity, restraint, and tactical analysis
+
+### Root-Level Image Assets
+
+Zeravyr encounter images:
+- `character-zeravyr-enemy-vampire-1.png`
+- `character-zeravyr-enemy-vampire-2.png`
+- `character-zeravyr-enemy-vampire-3.png`
+- `character-zeravyr-enemy-vampire-4.png`
+- `character-zeravyr-enemy-vampire-5.png`
+- `character-zeravyr-enemy-vampire-6.png`
+
+Enemy design images:
+- `enemy-vampire-1.png`
+- `enemy-vampire-2.png`
+- `enemy-vampire-3.png`
+
+### Single-Layer Site Rule
+All image files are stored in the same root layer as:
+- `index.html`
+- `README.md`
+
+No nested folders are used.
+
 # Deployment Notes
 
 This site is deployed through Vercel using GitHub.

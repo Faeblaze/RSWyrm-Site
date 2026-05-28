@@ -377,6 +377,66 @@
     grid-template-columns: 1fr;
   }
 }
+    .wendigo-lore {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(90, 150, 255, 0.12), transparent 30%),
+    radial-gradient(circle at 78% 42%, rgba(120, 120, 140, 0.16), transparent 34%),
+    linear-gradient(180deg, #05070b 0%, #0b1017 55%, #030406 100%);
+  border-top: 1px solid rgba(125, 175, 255, 0.18);
+  border-bottom: 1px solid rgba(125, 175, 255, 0.12);
+}
+
+.wendigo-lore .section-kicker,
+.wendigo-lore .enemy-number,
+.wendigo-lore .enemy-trait-card h4 {
+  color: #8fbaff;
+}
+
+.wendigo-lore .enemy-feature-image,
+.wendigo-lore .enemy-feature-copy,
+.wendigo-lore .enemy-trait-card,
+.wendigo-lore .enemy-design-gallery,
+.wendigo-lore .gallery-item,
+.wendigo-lore .design-gallery-grid img {
+  border-color: rgba(125, 175, 255, 0.18);
+}
+
+.wendigo-lore .enemy-feature-image::after {
+  background:
+    linear-gradient(135deg, rgba(125, 175, 255, 0.15), transparent 42%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.58), transparent 45%);
+}
+
+.wendigo-lore .enemy-feature-copy,
+.wendigo-lore .enemy-trait-card,
+.wendigo-lore .enemy-design-gallery {
+  background: rgba(5, 8, 13, 0.86);
+}
+
+.wendigo-lore .enemy-lore-subtitle,
+.wendigo-lore .enemy-feature-copy p,
+.wendigo-lore .enemy-trait-card p,
+.wendigo-lore .enemy-design-gallery p {
+  color: #d2d8e4;
+}
+
+.wendigo-encounter-gallery.second-gallery {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 280px;
+  margin-top: -42px;
+}
+
+.wendigo-design-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1040px) {
+  .wendigo-encounter-gallery.second-gallery,
+  .wendigo-design-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+}
   </style>
 </head>
 <body>
@@ -638,6 +698,103 @@
         <img src="./enemy-wraith-2.png" alt="Grave-Tread Wraith solo enemy design study 2">
         <img src="./enemy-wraith-3.png" alt="Grave-Tread Wraith solo enemy design study 3">
         <img src="./enemy-wraith-4.png" alt="Grave-Tread Wraith solo enemy design study 4">
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="enemy-lore-section wendigo-lore" id="wendigo">
+  <div class="enemy-lore-wrap">
+    <div class="enemy-lore-header">
+      <p class="section-kicker">Northern Arc Enemy File 02</p>
+      <h2>Wendigo</h2>
+      <p class="enemy-lore-subtitle">
+        Physical flesh-horror. Winter cannibal predator. The second northern escalation, where the threat stops haunting the battlefield and starts hunting bodies.
+      </p>
+    </div>
+
+    <div class="enemy-feature-grid">
+      <div class="enemy-feature-image">
+        <img src="./character-servia-enemy-wendigo-1.png" alt="Servia leading wounded wolf-kin through the northern pass before the Wendigo encounter">
+      </div>
+
+      <div class="enemy-feature-copy">
+        <span class="enemy-number">02</span>
+        <h3>The North Becomes Hunger</h3>
+        <p>
+          The Wendigo is not a Wraith, not a spirit-harvester, and not an intelligent blood-faction enemy. It owns the physical horror lane of the northern arc: winter hunger, cannibal pressure, brute impact, and close-range survival terror.
+        </p>
+        <p>
+          Its body is huge, broad, and ugly, built like a frost-starved apex predator. Heavy forelimbs, torn hide, matted white fur, corpse-grey flesh, jagged claws, and green predator eyes make it feel less like a magical soldier and more like hunger wearing a body.
+        </p>
+        <p>
+          This encounter belongs to Servia. Her senses detect the threat first, her beginner gravity magic does not dominate it, and her role becomes survival, protection, movement, and buying seconds for the wounded wolf-kin to live.
+        </p>
+      </div>
+    </div>
+
+    <div class="enemy-trait-grid">
+      <article class="enemy-trait-card">
+        <h4>Function</h4>
+        <p>
+          Physical flesh-horror predator. The Wendigo exists to make the north feel unsafe at body level: ambush, impact, blood, claw pressure, and survival panic.
+        </p>
+      </article>
+
+      <article class="enemy-trait-card">
+        <h4>Threat Logic</h4>
+        <p>
+          Its claws disrupt formed magic through violent contact. It does not outthink Apostles. It breaks distance, collapses safety, and forces immediate movement.
+        </p>
+      </article>
+
+      <article class="enemy-trait-card">
+        <h4>Encounter Role</h4>
+        <p>
+          The Wendigo tests Servia’s senses, courage, rescue instincts, and beginner gravity control without making her overpowered or fully mastered.
+        </p>
+      </article>
+    </div>
+
+    <div class="enemy-gallery wendigo-encounter-gallery">
+      <div class="gallery-item large">
+        <img src="./character-servia-enemy-wendigo-2.png" alt="Servia protecting wounded wolf-kin during the Wendigo encounter">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-servia-enemy-wendigo-3.png" alt="Servia reacting as the Wendigo attacks in the frozen northern pass">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-servia-enemy-wendigo-4.png" alt="Servia facing the Wendigo at close range with beginner gravity magic">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-servia-enemy-wendigo-5.png" alt="Servia surviving the Wendigo attack in the northern canyon">
+      </div>
+    </div>
+
+    <div class="enemy-gallery wendigo-encounter-gallery second-gallery">
+      <div class="gallery-item">
+        <img src="./character-servia-enemy-wendigo-6.png" alt="Servia using gravity against a Wendigo in the frozen north">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-servia-enemy-wendigo-7.png" alt="Servia clashing with a Wendigo claw strike using blue-violet magic">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-servia-enemy-wendigo-8.png" alt="Servia pinning or redirecting a Wendigo during the encounter">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-servia-enemy-wendigo-9.png" alt="Aftermath of Servia’s Wendigo encounter in the northern pass">
+      </div>
+    </div>
+
+    <div class="enemy-design-gallery">
+      <h3>Enemy Design Studies</h3>
+      <p>
+        The Wendigo owns the brute predator lane: broad body mass, matted frost-fur, corpse-grey skin, huge claws, bloodied jaws, magic-disrupting impact, and ugly winter cannibal horror.
+      </p>
+
+      <div class="design-gallery-grid wendigo-design-grid">
+        <img src="./enemy-wendigo-1.png" alt="Wendigo solo enemy design study 1">
+        <img src="./enemy-wendigo-2.png" alt="Wendigo solo enemy design study 2">
+        <img src="./enemy-wendigo-3.png" alt="Wendigo solo enemy design study 3">
       </div>
     </div>
   </div>

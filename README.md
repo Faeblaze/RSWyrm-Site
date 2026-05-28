@@ -282,6 +282,20 @@ All image files are stored in the same root layer as:
 
 No nested folders are used.
 
+## Servia Identity Archive Asset
+
+### Character
+**Servia**
+
+### Role
+First Fang of RedShiftWyrm
+
+### Root-Level Image Asset
+- `character-servia-apostle-first-fang-of-redshiftwyrm.png`
+
+### Lore Function
+Servia is the white fox-woman First Fang connected to the northern arc. Her role is sensory support, rescue pressure, movement, and emerging gravity control. She carries the icy blue-violet side of RedShiftWyrm’s Apostle visual language.
+
 # Deployment Notes
 
 This site is deployed through Vercel using GitHub.

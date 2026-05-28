@@ -188,6 +188,55 @@ All image files are stored in the same root layer as:
 
 No nested folders are used.
 
+## Commit 2 — Wendigo Homepage Lore Update
+
+### Purpose
+Adds the second Northern Arc enemy lore section to the RedShiftWyrm homepage.
+
+### Enemy
+**Wendigo**
+
+### Website Role
+The Wendigo follows the Grave-Tread Wraith in the Northern Arc escalation order. Where the Wraith establishes spiritual corruption, the Wendigo establishes physical survival horror.
+
+### Lore Function
+- Physical flesh-horror predator
+- Winter cannibal threat
+- Ambush and close-range survival pressure
+- Huge broad body mass
+- Corpse-grey flesh and matted frost-white fur
+- Brutal claws that disrupt formed magic through impact
+- Not a Wraith
+- Not a Vampire
+- Not an intelligent faction enemy
+- Servia-focused encounter
+- Tests Servia’s senses, rescue instinct, and beginner gravity control
+
+### Root-Level Image Assets
+
+Servia encounter images:
+- `character-servia-enemy-wendigo-1.png`
+- `character-servia-enemy-wendigo-2.png`
+- `character-servia-enemy-wendigo-3.png`
+- `character-servia-enemy-wendigo-4.png`
+- `character-servia-enemy-wendigo-5.png`
+- `character-servia-enemy-wendigo-6.png`
+- `character-servia-enemy-wendigo-7.png`
+- `character-servia-enemy-wendigo-8.png`
+- `character-servia-enemy-wendigo-9.png`
+
+Enemy design images:
+- `enemy-wendigo-1.png`
+- `enemy-wendigo-2.png`
+- `enemy-wendigo-3.png`
+
+### Single-Layer Site Rule
+All image files are stored in the same root layer as:
+- `index.html`
+- `README.md`
+
+No nested folders are used.
+
 # Deployment Notes
 
 This site is deployed through Vercel using GitHub.

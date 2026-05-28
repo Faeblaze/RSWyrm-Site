@@ -1011,12 +1011,14 @@
   <button class="lightbox-close" type="button" aria-label="Close image">×</button>
   <img id="lightboxImage" src="" alt="">
 </div>
-  <script>
+ <script>
   const lightbox = document.getElementById("imageLightbox");
   const lightboxImage = document.getElementById("lightboxImage");
   const lightboxClose = document.querySelector(".lightbox-close");
 
-  document.querySelectorAll(".enemy-feature-image img, .gallery-item img, .design-gallery-grid img").forEach((img) => {
+  document.querySelectorAll("img:not(#lightboxImage)").forEach((img) => {
+    img.style.cursor = "zoom-in";
+
     img.addEventListener("click", () => {
       lightboxImage.src = img.src;
       lightboxImage.alt = img.alt || "Expanded RedShiftWyrm image";

@@ -145,6 +145,48 @@ His visual identity includes:
   Ogre Siege-Breaker character image.
 
 ---
+## Commit 1 — Grave-Tread Wraith Homepage Lore Update
+
+### Purpose
+Adds the first Northern Arc enemy lore section to the RedShiftWyrm homepage.
+
+### Enemy
+**Grave-Tread Wraith**
+
+### Website Role
+The Grave-Tread Wraith introduces the northern arc as spiritually corrupted. It is the first enemy escalation point before Wendigoes and Blood-Caste Vampires.
+
+### Lore Function
+- Spiritual death-harvester
+- Undead battlefield pressure unit
+- Corpse-pinning and soul/dead-mana extraction
+- Six spectral hooves using dead-mana propulsion
+- Emerald necrotic chest core
+- Blue rune-banded arms
+- Responds in groups to dead-mana disturbance
+- Encountered by Zeravyr and Servia with wounded northern wolf-kin nearby
+
+### Root-Level Image Assets
+
+Character encounter images:
+- `characters-zeravyr-servia-enemy-wraith-1.png`
+- `characters-zeravyr-servia-enemy-wraith-2.png`
+- `characters-zeravyr-servia-enemy-wraith-3.png`
+- `characters-zeravyr-servia-enemy-wraith-4.png`
+- `characters-zeravyr-servia-enemy-wraith-5.png`
+
+Enemy design images:
+- `enemy-wraith-1.png`
+- `enemy-wraith-2.png`
+- `enemy-wraith-3.png`
+- `enemy-wraith-4.png`
+
+### Single-Layer Site Rule
+All image files are stored in the same root layer as:
+- `index.html`
+- `README.md`
+
+No nested folders are used.
 
 # Deployment Notes
 

@@ -437,6 +437,76 @@
     grid-auto-rows: auto;
   }
 }
+    .vampire-lore {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(210, 0, 48, 0.16), transparent 30%),
+    radial-gradient(circle at 78% 42%, rgba(115, 30, 255, 0.12), transparent 34%),
+    linear-gradient(180deg, #060307 0%, #0b070d 55%, #030204 100%);
+  border-top: 1px solid rgba(255, 35, 72, 0.2);
+  border-bottom: 1px solid rgba(255, 35, 72, 0.14);
+}
+
+.vampire-lore .section-kicker,
+.vampire-lore .enemy-number,
+.vampire-lore .enemy-trait-card h4 {
+  color: #ff315f;
+}
+
+.vampire-lore .enemy-feature-image,
+.vampire-lore .enemy-feature-copy,
+.vampire-lore .enemy-trait-card,
+.vampire-lore .enemy-design-gallery,
+.vampire-lore .gallery-item,
+.vampire-lore .design-gallery-grid img {
+  border-color: rgba(255, 35, 72, 0.2);
+}
+
+.vampire-lore .enemy-feature-image::after {
+  background:
+    linear-gradient(135deg, rgba(255, 35, 72, 0.18), transparent 42%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.6), transparent 45%);
+}
+
+.vampire-lore .enemy-feature-copy,
+.vampire-lore .enemy-trait-card,
+.vampire-lore .enemy-design-gallery {
+  background: rgba(10, 4, 8, 0.88);
+}
+
+.vampire-lore .enemy-lore-subtitle,
+.vampire-lore .enemy-feature-copy p,
+.vampire-lore .enemy-trait-card p,
+.vampire-lore .enemy-design-gallery p {
+  color: #dccbd3;
+}
+
+.vampire-encounter-gallery.second-gallery {
+  grid-template-columns: 1fr;
+  grid-auto-rows: 520px;
+  margin-top: -42px;
+}
+
+.vampire-encounter-gallery .gallery-item.wide {
+  grid-column: 1 / -1;
+}
+
+.vampire-design-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vampire-lore .gallery-item img,
+.vampire-lore .design-gallery-grid img,
+.vampire-lore .enemy-feature-image img {
+  filter: contrast(1.1) saturate(1.08);
+}
+
+@media (max-width: 1040px) {
+  .vampire-encounter-gallery.second-gallery,
+  .vampire-design-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+}
   </style>
 </head>
 <body>
@@ -795,6 +865,94 @@
         <img src="./enemy-wendigo-1.png" alt="Wendigo solo enemy design study 1">
         <img src="./enemy-wendigo-2.png" alt="Wendigo solo enemy design study 2">
         <img src="./enemy-wendigo-3.png" alt="Wendigo solo enemy design study 3">
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="enemy-lore-section vampire-lore" id="blood-caste-vampire">
+  <div class="enemy-lore-wrap">
+    <div class="enemy-lore-header">
+      <p class="section-kicker">Northern Arc Enemy File 03</p>
+      <h2>Blood-Caste Vampire</h2>
+      <p class="enemy-lore-subtitle">
+        Intelligent blood-faction enemy. Hemogem magic, caste regalia, long-legged speed, and information warfare. The third northern escalation proves the north is not only haunted or hungry — it is watching.
+      </p>
+    </div>
+
+    <div class="enemy-feature-grid">
+      <div class="enemy-feature-image">
+        <img src="./character-zeravyr-enemy-vampire-1.png" alt="Zeravyr facing the Blood-Caste Vampire field unit in a ruined northern cathedral">
+      </div>
+
+      <div class="enemy-feature-copy">
+        <span class="enemy-number">03</span>
+        <h3>The North Starts Studying Back</h3>
+        <p>
+          The Blood-Caste Vampire is not a romantic noble, not a beast, and not an undead mob. It is an intelligent humanoid blood-predator from an organized northern vampire civilization.
+        </p>
+        <p>
+          These Vampires fight through hemogems, blood-thread magic, long-legged speed, caste regalia, blood sigils, and tactical retreat. Their goal is not always immediate victory. Sometimes the true objective is to measure the enemy, survive the clash, and report what was learned.
+        </p>
+        <p>
+          This encounter belongs to Zeravyr. She does not treat the Vampires like monsters. She studies them back: fire severs the blood network, gravity breaks the stride, one Vampire falls, and the surviving Blood-Caste witnesses flee with information.
+        </p>
+      </div>
+    </div>
+
+    <div class="enemy-trait-grid">
+      <article class="enemy-trait-card">
+        <h4>Function</h4>
+        <p>
+          Intelligent blood-faction enemy. Vampires introduce social danger, caste hierarchy, battlefield analysis, and political consequence to the northern arc.
+        </p>
+      </article>
+
+      <article class="enemy-trait-card">
+        <h4>Magic Logic</h4>
+        <p>
+          Hemogems act as blood reservoirs and magic focuses. Blood threads, needles, guards, sigils, and wound-pull lines are shaped as physical blood manipulation.
+        </p>
+      </article>
+
+      <article class="enemy-trait-card">
+        <h4>Encounter Role</h4>
+        <p>
+          The Vampire encounter tests Zeravyr’s restraint, fire control, gravity precision, and ability to deny information to an enemy that fights to learn.
+        </p>
+      </article>
+    </div>
+
+    <div class="enemy-gallery vampire-encounter-gallery">
+      <div class="gallery-item large">
+        <img src="./character-zeravyr-enemy-vampire-2.png" alt="Zeravyr using redshift fire against Blood-Caste Vampire blood threads">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-zeravyr-enemy-vampire-3.png" alt="Zeravyr pinning a Blood-Caste Vampire with gravity magic">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-zeravyr-enemy-vampire-4.png" alt="Zeravyr analyzing a slain Blood-Caste Vampire and cracked hemogem">
+      </div>
+      <div class="gallery-item">
+        <img src="./character-zeravyr-enemy-vampire-5.png" alt="Blood-Caste Vampires fleeing after Zeravyr slays one of their unit">
+      </div>
+    </div>
+
+    <div class="enemy-gallery vampire-encounter-gallery second-gallery">
+      <div class="gallery-item wide">
+        <img src="./character-zeravyr-enemy-vampire-6.png" alt="Zeravyr records the Blood-Caste Vampire logic after the encounter">
+      </div>
+    </div>
+
+    <div class="enemy-design-gallery">
+      <h3>Enemy Design Studies</h3>
+      <p>
+        The Blood-Caste Vampire owns the intelligent predator lane: pale blue-white corpse skin, deep red eyes, overlong legs, black and dark-silver caste regalia, blood-red hemogems, authority jewelry, and precise blood-thread magic.
+      </p>
+
+      <div class="design-gallery-grid vampire-design-grid">
+        <img src="./enemy-vampire-1.png" alt="Blood-Caste Vampire solo enemy design study 1">
+        <img src="./enemy-vampire-2.png" alt="Blood-Caste Vampire solo enemy design study 2">
+        <img src="./enemy-vampire-3.png" alt="Blood-Caste Vampire solo enemy design study 3">
       </div>
     </div>
   </div>

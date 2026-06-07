@@ -293,6 +293,38 @@ First Fang of RedShiftWyrm
 ### Root-Level Image Asset
 - `character-servia-apostle-first-fang-of-redshiftwyrm.png`
 
+## Zephlyra / Southern Harpy Arc Assets
+
+### Character Page
+- zephlyra.html
+
+### Character Identity Images
+- zephlyra.1.png
+- zephlyra.2.png
+- zephlyra.3.png
+- zephlyra.4.png
+- zephlyra.5.png
+- zephlyra.6.png
+- zephlyra.7.png
+- zephlyra.8.png
+- zephlyra.9.png
+- zephlyra.10.png
+- zephlyra.11.png
+
+### Reilana vs Zephlyra Sequence Images
+- character-zephlyra.character-reilana.1.png
+- character-zephlyra.character-reilana.2.png
+- character-zephlyra.character-reilana.3.png
+- character-zephlyra.character-reilana.4.png
+- character-zephlyra.character-reilana.5.png
+- character-zephlyra.character-reilana.6.png
+- character-zephlyra.character-reilana.7.png
+- character-zephlyra.character-reilana.8.png
+- character-zephlyra.character-reilana.9.png
+
+### Lore Summary
+Zephlyra is the storm-born harpy rival of the southern ocean cliffs. She challenges Reilana Sirocclume during the southern expansion arc and becomes a major proof point for Reilana’s Apostle authority. After her defeat beneath gravity pressure, Zephlyra is positioned as a future Fang of RedShiftWyrm.
+
 ### Lore Function
 Servia is the white fox-woman First Fang connected to the northern arc. Her role is sensory support, rescue pressure, movement, and emerging gravity control. She carries the icy blue-violet side of RedShiftWyrm’s Apostle visual language.
 

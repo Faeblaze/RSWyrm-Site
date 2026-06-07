@@ -557,6 +557,49 @@
 .design-gallery-grid img {
   cursor: zoom-in;
 }
+    .arc-cta {
+  display: inline-block;
+  margin-top: 0.85rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background:
+    linear-gradient(135deg,
+      rgba(255, 45, 85, 0.95),
+      rgba(155, 92, 255, 0.95),
+      rgba(57, 182, 255, 0.95)
+    );
+
+  border: 1px solid rgba(210, 180, 255, 0.55);
+  box-shadow:
+    0 0 12px rgba(255, 45, 85, 0.35),
+    0 0 22px rgba(155, 92, 255, 0.32),
+    0 0 32px rgba(57, 182, 255, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.arc-cta:hover {
+  transform: translateY(-2px) scale(1.025);
+  filter: brightness(1.15);
+  box-shadow:
+    0 0 16px rgba(255, 45, 85, 0.55),
+    0 0 30px rgba(155, 92, 255, 0.48),
+    0 0 44px rgba(57, 182, 255, 0.30);
+}
+
+.arc-cta:active {
+  transform: translateY(0) scale(0.99);
+}
   </style>
 </head>
 <body>

@@ -740,7 +740,12 @@
     </div>
   </div>
 </section>
-  <div id="imageLightbox" class="image-lightbox" aria-hidden="true">
+<div id="imageLightbox" class="image-lightbox" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+  <img id="lightboxImage" src="" alt="">
+</div>
+
+<script>
  <script>
   const lightbox = document.getElementById("imageLightbox");
   const lightboxImage = document.getElementById("lightboxImage");

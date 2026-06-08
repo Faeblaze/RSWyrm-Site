@@ -253,7 +253,36 @@
       line-height: 1;
       z-index: 1001;
     }
+/* Prevent blue selection/tap highlight on gallery images */
+img,
+.gallery-item,
+.gallery-item img,
+.hero-card img,
+.lightbox img,
+.lightbox-close {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
 
+img:focus,
+img:active,
+.gallery-item:focus,
+.gallery-item:active,
+.gallery-item img:focus,
+.gallery-item img:active,
+.hero-card img:focus,
+.hero-card img:active,
+.lightbox img:focus,
+.lightbox img:active {
+  outline: none;
+}
+
+.gallery-item img {
+  -webkit-touch-callout: none;
+}
+    
     @media (max-width: 850px) {
       .hero,
       .lore-grid {

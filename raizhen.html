@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Raizhen | Oni Apostle of RedShiftWyrm</title>
-  <meta name="description" content="Raizhen, Oni Apostle of RedShiftWyrm. Eastern Oni Islands archive, transformation, lore role, and tribal conversion." />
+  <meta name="description" content="Raizhen, Oni Apostle of RedShiftWyrm. Eastern Oni Islands lore archive, transformation, stats, powers, and design evolution." />
 
   <style>
     :root {
@@ -17,6 +17,7 @@
       --violet: #8b5cf6;
       --purple: #d946ef;
       --blue: #38bdf8;
+      --gold: #f6c66b;
     }
 
     * {
@@ -31,9 +32,9 @@
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
       background:
-        radial-gradient(circle at 18% 0%, rgba(225,29,72,.20), transparent 30%),
-        radial-gradient(circle at 82% 12%, rgba(139,92,246,.22), transparent 34%),
-        radial-gradient(circle at 50% 100%, rgba(56,189,248,.10), transparent 30%),
+        radial-gradient(circle at 20% 0%, rgba(139,92,246,.22), transparent 28%),
+        radial-gradient(circle at 90% 12%, rgba(225,29,72,.16), transparent 26%),
+        radial-gradient(circle at 50% 100%, rgba(56,189,248,.08), transparent 32%),
         linear-gradient(180deg, #050006 0%, #000 48%, #050006 100%);
       color: var(--text);
     }
@@ -119,33 +120,32 @@
     }
 
     .hero {
+      min-height: 88vh;
       display: grid;
-      grid-template-columns: .95fr 1.05fr;
-      gap: 36px;
+      grid-template-columns: .9fr 1.1fr;
       align-items: center;
+      gap: 34px;
       padding: 72px 0;
-      min-height: 86vh;
     }
 
-    .kicker {
+    .eyebrow {
       color: #f0abfc;
       font-size: 12px;
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: .32em;
-      margin-bottom: 14px;
     }
 
     h1 {
-      font-size: clamp(54px, 9vw, 122px);
-      line-height: .86;
+      font-size: clamp(56px, 10vw, 132px);
+      line-height: .85;
       letter-spacing: -.075em;
       text-transform: uppercase;
-      margin: 0 0 16px;
+      margin: 18px 0 14px;
     }
 
-    .subtitle {
-      font-size: clamp(20px, 2.4vw, 32px);
+    .tagline {
+      font-size: clamp(18px, 2.3vw, 30px);
       color: #f5d0fe;
       font-weight: 800;
       margin: 0 0 20px;
@@ -155,29 +155,14 @@
       color: #ddd3e8;
       font-size: 18px;
       line-height: 1.8;
-      max-width: 760px;
-    }
-
-    .hero-image {
-      overflow: hidden;
-      border-radius: 34px;
-      border: 1px solid var(--line);
-      background: #050507;
-      box-shadow: 0 30px 90px rgba(0,0,0,.58);
-    }
-
-    .hero-image img {
-      width: 100%;
-      max-height: 850px;
-      object-fit: cover;
-      object-position: center top;
+      max-width: 720px;
     }
 
     .buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
-      margin-top: 30px;
+      margin-top: 28px;
     }
 
     .button {
@@ -195,15 +180,31 @@
       box-shadow: none;
     }
 
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      border: 1px solid var(--line);
+      background: #050505;
+      box-shadow: 0 30px 90px rgba(0,0,0,.55);
+    }
+
+    .hero-card img {
+      width: 100%;
+      max-height: 860px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
     section {
       padding: 82px 0;
       border-top: 1px solid rgba(255,255,255,.08);
     }
 
     .section-title {
-      max-width: 900px;
-      margin: 0 auto 42px;
       text-align: center;
+      max-width: 900px;
+      margin: 0 auto 44px;
     }
 
     .section-title h2 {
@@ -220,16 +221,22 @@
       margin: 0;
     }
 
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
+
     .grid-3 {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
 
-    .grid-2 {
+    .grid-4 {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
     }
 
     .card {
@@ -258,20 +265,145 @@
       margin: 0;
     }
 
-    .quote-panel {
-      margin-top: 40px;
-      padding: 36px;
+    .feature {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .feature.reverse {
+      grid-template-columns: 1.05fr .95fr;
+    }
+
+    .feature img,
+    .gallery img {
+      width: 100%;
       border-radius: 32px;
-      border: 1px solid rgba(217,70,239,.25);
+      border: 1px solid var(--line);
+      background: #050507;
+      box-shadow: 0 30px 90px rgba(0,0,0,.55);
+    }
+
+    .feature img {
+      max-height: 760px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .feature-copy p {
+      color: #d0c4dc;
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    .stat-card {
+      border-radius: 24px;
+      padding: 22px;
+      border: 1px solid rgba(217,70,239,.18);
       background:
-        radial-gradient(circle at 50% 0%, rgba(139,92,246,.18), transparent 40%),
+        radial-gradient(circle at top left, rgba(139,92,246,.13), transparent 34%),
+        rgba(255,255,255,.035);
+    }
+
+    .stat-card b {
+      display: block;
+      color: #f0abfc;
+      font-size: 12px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .stat-card span {
+      color: #ddd3e8;
+      line-height: 1.6;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 28px;
+    }
+
+    .timeline-item {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 28px;
+      align-items: center;
+      padding: 24px;
+      border-radius: 32px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+    }
+
+    .timeline-item img {
+      width: 100%;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,.13);
+      object-fit: cover;
+      object-position: center top;
+      max-height: 680px;
+    }
+
+    .timeline-item h3 {
+      font-size: clamp(28px, 4vw, 48px);
+      margin: 8px 0 14px;
+      letter-spacing: -.045em;
+      text-transform: uppercase;
+    }
+
+    .timeline-item p {
+      color: #d0c4dc;
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .gallery img {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .gallery.wide img {
+      aspect-ratio: 16 / 9;
+    }
+
+    .wip-gallery {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+
+    .wip-gallery img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: #050507;
+    }
+
+    .quote-panel {
+      margin-top: 42px;
+      padding: 42px;
+      border: 1px solid rgba(217,70,239,.25);
+      border-radius: 32px;
+      background:
+        radial-gradient(circle at 50% 0%, rgba(139,92,246,.2), transparent 40%),
         rgba(255,255,255,.035);
       text-align: center;
     }
 
     .quote-panel h2 {
+      font-size: clamp(34px, 5vw, 62px);
       margin: 0 0 12px;
-      font-size: clamp(30px, 5vw, 54px);
       letter-spacing: -.045em;
       text-transform: uppercase;
     }
@@ -280,7 +412,7 @@
       color: var(--muted);
       line-height: 1.75;
       margin: 0 auto;
-      max-width: 780px;
+      max-width: 820px;
     }
 
     footer {
@@ -302,13 +434,23 @@
 
     @media(max-width: 980px) {
       .hero,
+      .feature,
+      .feature.reverse,
+      .timeline-item,
       .grid-2,
-      .grid-3 {
+      .grid-3,
+      .grid-4,
+      .gallery,
+      .wip-gallery {
         grid-template-columns: 1fr;
       }
 
       .hero {
         padding-top: 48px;
+      }
+
+      .wip-gallery img {
+        aspect-ratio: 4 / 5;
       }
     }
 
@@ -320,6 +462,10 @@
 
       nav {
         justify-content: flex-start;
+      }
+
+      .timeline-item {
+        padding: 16px;
       }
     }
   </style>
@@ -348,67 +494,264 @@
   <main>
     <div class="wrap hero">
       <div>
-        <div class="kicker">Eastern Oni Islands / Apostle Archive</div>
+        <div class="eyebrow">Eastern Oni Islands / Apostle Archive</div>
         <h1>Raizhen</h1>
-        <p class="subtitle">Oni Apostle of RedShiftWyrm</p>
+        <p class="tagline">Oni Apostle of RedShiftWyrm</p>
 
         <p class="lead">
-          Raizhen began as an oni warlord: brutal, territorial, weapon-led, and shaped by survival.
-          His transformation marks a major expansion of RedShiftWyrm’s world, moving the mythology from
-          isolated chosen champions into full tribal conversion.
+          Raizhen began as an oni warlord shaped by brutality, territory, weapon mastery, storm pressure,
+          volcanic endurance, and survival hierarchy. After Rhagnvyr reaches the eastern islands, Raizhen becomes
+          the first major proof that RedShiftWyrm can convert not only chosen individuals, but entire tribal power structures.
         </p>
 
         <div class="buttons">
-          <a class="button" href="#lore">Read Raizhen Lore</a>
-          <a class="button secondary" href="./index.html#characters">Return to Archive</a>
+          <a class="button" href="#identity">Identity Stats</a>
+          <a class="button secondary" href="#timeline">Read His Arc</a>
         </div>
       </div>
 
-      <div class="hero-image">
+      <div class="hero-card">
         <img
           src="./character-raizhen-apostle-1.png"
           alt="Raizhen, Oni Apostle of RedShiftWyrm"
+          loading="eager"
+          decoding="async"
         >
       </div>
     </div>
 
-    <section id="lore">
+    <section id="identity">
       <div class="wrap">
         <div class="section-title">
-          <div class="kicker">Lore Role</div>
-          <h2>The Warlord Rewritten</h2>
+          <div class="eyebrow">Identity</div>
+          <h2>Character Archive Data</h2>
           <p>
-            Raizhen is not a clean heroic recruit. He is a violent power structure brought under divine hierarchy.
-            RedShiftWyrm does not erase the oni warlord. The contract weaponizes him.
+            Raizhen is not a clean recruit. He is a conquered warlord whose violence becomes reorganized
+            into apostolic purpose.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="stat-card"><b>Category</b><span>Apostle of RedShiftWyrm</span></div>
+          <div class="stat-card"><b>Region</b><span>Eastern Oni Islands</span></div>
+          <div class="stat-card"><b>Origin</b><span>Oni Warlord / Tribal Power Chief</span></div>
+          <div class="stat-card"><b>Role</b><span>First major tribal conversion anchor</span></div>
+          <div class="stat-card"><b>Primary Weapon</b><span>Segmented volcanic war-club / gravity-forged relic</span></div>
+          <div class="stat-card"><b>Core Traits</b><span>Brutality, command, endurance, territory, weapon mastery</span></div>
+          <div class="stat-card"><b>RedShift Mark</b><span>Left-arm Apostle sleeve and shoulder sigil</span></div>
+          <div class="stat-card"><b>Visual Palette</b><span>Obsidian, crimson, violet, electric blue, ash-metal</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline">
+      <div class="wrap">
+        <div class="section-title">
+          <div class="eyebrow">Life Story</div>
+          <h2>From Warlord to Apostle</h2>
+          <p>
+            Raizhen’s arc matters because it escalates the mythology. This is no longer only about isolated
+            vessels being chosen. This is the first time a whole culture witnesses RedShift hierarchy and begins to convert.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <img
+              src="./raizhen-pre-apostle-1.png"
+              alt="Raizhen before becoming an Apostle"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div>
+              <div class="eyebrow">Stage I</div>
+              <h3>The Island Warlord</h3>
+              <p>
+                Before the contract, Raizhen is a product of island violence. His authority comes from size,
+                weapon skill, endurance, and the ability to survive in a clan culture where weakness has no political value.
+              </p>
+              <p>
+                He is not evil for the sake of evil. He is a brutal ruler shaped by a brutal system:
+                territory, challenge, victory, submission, and strength made visible.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <img
+              src="./character-voraku-character-drakhen-character-saorya.png"
+              alt="Voraku, Drakhen, and Saorya of the Oni island clan"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div>
+              <div class="eyebrow">Stage II</div>
+              <h3>The Oni Islander Clan</h3>
+              <p>
+                The Oni Islands are not a random demon camp. They are a giant-bodied tribal society with fortress-scale
+                architecture, war banners, storm rituals, volcanic terrain, weapon inheritance, and public hierarchy.
+              </p>
+              <p>
+                Voraku, Drakhen, and Saorya help define that culture. They show that Raizhen does not come from nowhere.
+                He belongs to a larger martial order that can be defeated, witnessed, and converted.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <img
+              src="./raizhen-pre-apostle-character-rhagnvyr-1.png"
+              alt="Raizhen attacking Rhagnvyr before apostolic conversion"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div>
+              <div class="eyebrow">Stage III</div>
+              <h3>Rhagnvyr Arrives</h3>
+              <p>
+                When Rhagnvyr reaches the islands, the conflict begins as a test of force. Raizhen answers with the logic
+                of his world: mass, weapon impact, momentum, and direct challenge.
+              </p>
+              <p>
+                Rhagnvyr answers with divine gravity. The fight becomes philosophical: brute strength against cosmic law.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <img
+              src="./raizhen-pre-apostle-character-rhagnvyr-2.png"
+              alt="Raizhen kneeling before Rhagnvyr after defeat"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div>
+              <div class="eyebrow">Stage IV</div>
+              <h3>The Submission Point</h3>
+              <p>
+                Raizhen is not simply beaten. He is forced to understand a higher hierarchy. His weapon, body,
+                and will are all made secondary to Rhagnvyr’s gravitational authority.
+              </p>
+              <p>
+                This is the moment the tribe sees the difference between a strong ruler and a divine law.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <img
+              src="./character-raizhen-apostle-2.png"
+              alt="Raizhen elevated after apostolic conversion with the Oni clan witnessing"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div>
+              <div class="eyebrow">Stage V</div>
+              <h3>The Tribe Witnesses</h3>
+              <p>
+                Raizhen’s conversion is public. That matters. The clan does not only see their warlord fall.
+                They see him transformed into something higher.
+              </p>
+              <p>
+                This turns defeat into doctrine. RedShiftWyrm’s influence spreads through belief, spectacle,
+                hierarchy, and survival instinct.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <img
+              src="./character-raizhen-apostle.png"
+              alt="Raizhen standing as Oni Apostle before the converted tribe"
+              loading="lazy"
+              decoding="async"
+            >
+
+            <div>
+              <div class="eyebrow">Stage VI</div>
+              <h3>Oni Apostle</h3>
+              <p>
+                As an Apostle, Raizhen remains massive, violent, and tribal. RedShiftWyrm does not sanitize him.
+                The contract refines his brutality into divine function.
+              </p>
+              <p>
+                He becomes the first major proof that RedShift conversion can scale from individual transformation
+                into factional absorption.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <div class="eyebrow">Power Logic</div>
+          <h2>Strengths and Combat Role</h2>
+          <p>
+            Raizhen is a frontline Apostle. His value is not subtlety. His value is impact, morale collapse,
+            siege pressure, and turning tribal violence into RedShift military force.
           </p>
         </div>
 
         <div class="grid-3">
           <article class="card">
-            <small>Before Conversion</small>
-            <h3>Oni Warlord</h3>
+            <small>Physical Power</small>
+            <h3>Giant-Bodied Force</h3>
             <p>
-              Raizhen ruled through strength, territory, weapon mastery, tribal intimidation, and survival logic.
-              His identity was built from impact, endurance, and hierarchy before RedShiftWyrm ever touched him.
+              Raizhen’s strength is built around enormous mass, high pain tolerance, explosive swings,
+              armored durability, and direct battlefield intimidation.
             </p>
           </article>
 
           <article class="card">
-            <small>Encounter</small>
-            <h3>Rhagnvyr Arrives</h3>
+            <small>Weapon Mastery</small>
+            <h3>Volcanic War Relic</h3>
             <p>
-              When Rhagnvyr reaches the eastern islands, the conflict becomes more than a duel.
-              The entire tribe witnesses divine gravity, environmental pressure, and the failure of brute force
-              against cosmic law.
+              His weapon reads as a blackened tribal relic: segmented, spiked, heavy, volcanic, ash-metal,
+              and later infused with RedShift pressure.
             </p>
           </article>
 
           <article class="card">
-            <small>After Conversion</small>
-            <h3>Oni Apostle</h3>
+            <small>Elemental Nature</small>
+            <h3>Storm / Earth / Volcano</h3>
             <p>
-              Raizhen becomes an Apostle: still massive, still violent, still tribal, but now marked by the
-              RedShift contract. His strength is reorganized into divine service.
+              The Oni Islander identity uses storm skies, volcanic heat, heavy earth, basalt architecture,
+              wet stone, lightning, ash, and ritual banners.
+            </p>
+          </article>
+
+          <article class="card">
+            <small>Gravity Compatibility</small>
+            <h3>Pressure Vessel</h3>
+            <p>
+              Raizhen’s body makes him a natural gravity vessel. He does not express RedShift through elegance.
+              He expresses it through compression, impact, and crushing presence.
+            </p>
+          </article>
+
+          <article class="card">
+            <small>Leadership</small>
+            <h3>Tribal Command</h3>
+            <p>
+              His conversion gives RedShiftWyrm access to a whole hierarchy: warriors, elders, weapon-smiths,
+              ritual houses, and islander loyalty structures.
+            </p>
+          </article>
+
+          <article class="card">
+            <small>Weakness</small>
+            <h3>Directness</h3>
+            <p>
+              Raizhen’s flaw is also his identity. He meets power head-on. Against deception, speed, and layered magic,
+              he needs discipline, not more strength.
             </p>
           </article>
         </div>
@@ -416,8 +759,8 @@
         <div class="quote-panel">
           <h2>The Tribe Did Not Simply Fall</h2>
           <p>
-            Raizhen’s transformation proves a new level of conquest. RedShiftWyrm is no longer only selecting
-            isolated vessels. Through Raizhen, an entire oni hierarchy begins to convert.
+            Raizhen’s greatest achievement is not surviving Rhagnvyr. It is becoming the doorway through which
+            an entire Oni island hierarchy begins entering the RedShiftWyrm mythos.
           </p>
         </div>
       </div>
@@ -426,92 +769,82 @@
     <section>
       <div class="wrap">
         <div class="section-title">
-          <div class="kicker">Design Logic</div>
-          <h2>Visual Identity</h2>
+          <div class="eyebrow">Achievements</div>
+          <h2>Canon Significance</h2>
           <p>
-            Raizhen’s design should stay heavy, violent, ash-black, storm-lit, and ritualistic.
-            He should not read as a clean demon hero or a generic fantasy brute.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <article class="card">
-            <small>Body / Presence</small>
-            <h3>Giant-Bodied Authority</h3>
-            <p>
-              Raizhen carries enormous oni mass, warlord posture, heavy legs, wide shoulders,
-              battle-worn horns, and a grounded silhouette. His body language should feel like a walking fortress.
-            </p>
-          </article>
-
-          <article class="card">
-            <small>Weapon / Material</small>
-            <h3>Segmented War Relic</h3>
-            <p>
-              His weapon language is brutal and material-heavy: volcanic red, ash-metal, blackened surfaces,
-              storm-blue energy veins, and the feeling of a tribal relic upgraded by RedShift pressure.
-            </p>
-          </article>
-
-          <article class="card">
-            <small>Contract Mark</small>
-            <h3>Left-Arm Apostle Sleeve</h3>
-            <p>
-              As an Apostle, Raizhen carries the left-arm RedShift contract sleeve. It marks him as selected,
-              transformed, and bound into the divine hierarchy of RedShiftWyrm.
-            </p>
-          </article>
-
-          <article class="card">
-            <small>Palette</small>
-            <h3>Oni RedShift Fusion</h3>
-            <p>
-              Obsidian black, volcanic crimson, royal violet gravity glow, electric blue storm-runes,
-              ash-metal armor, and burnt ritual textures define his final Apostle identity.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-title">
-          <div class="kicker">Story Purpose</div>
-          <h2>Why Raizhen Matters</h2>
-          <p>
-            Raizhen expands the scale of the project. Zeravyr proved Apostle transformation.
-            Sevria proved Fang evolution. Raizhen proves faction conversion.
+            Raizhen is a scale-change character. He expands the story from personal transformation into cultural conversion.
           </p>
         </div>
 
         <div class="grid-3">
           <article class="card">
-            <small>World Expansion</small>
-            <h3>Eastern Island Saga</h3>
+            <small>Achievement I</small>
+            <h3>First Oni Apostle</h3>
             <p>
-              Raizhen anchors the eastern island movement and gives the Oni arc a central face,
-              power structure, and transformation outcome.
+              Raizhen becomes the first major Oni vessel selected into RedShiftWyrm’s hierarchy.
             </p>
           </article>
 
           <article class="card">
-            <small>Power System</small>
-            <h3>Gravity Over Strength</h3>
-            <p>
-              The Oni value force, weapon mastery, and physical dominance. Rhagnvyr proves that gravity sits
-              above all of those things.
-            </p>
-          </article>
-
-          <article class="card">
-            <small>Faction Growth</small>
+            <small>Achievement II</small>
             <h3>First Tribal Conversion</h3>
             <p>
-              Raizhen is the bridge between personal transformation and mass belief.
-              His conversion gives the tribe a reason to follow without reducing them to faceless minions.
+              His transformation proves that RedShift influence can reorganize clans, not just individuals.
             </p>
           </article>
+
+          <article class="card">
+            <small>Achievement III</small>
+            <h3>Eastern Island Anchor</h3>
+            <p>
+              He gives the eastern ocean movement a major regional face, power structure, and visual identity.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <div class="eyebrow">Apostle Form</div>
+          <h2>Final Identity Gallery</h2>
+          <p>
+            These images show Raizhen after his identity stabilizes as an Apostle: still Oni, still warlord,
+            now marked and redirected by RedShiftWyrm.
+          </p>
+        </div>
+
+        <div class="gallery wide">
+          <img src="./character-raizhen-apostle.png" alt="Raizhen Apostle wide tribe scene" loading="lazy" decoding="async">
+          <img src="./character-raizhen-apostle-2.png" alt="Raizhen Apostle conversion scene" loading="lazy" decoding="async">
+          <img src="./character-raizhen-apostle-1.png" alt="Raizhen Apostle portrait" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-title">
+          <div class="eyebrow">Development Archive</div>
+          <h2>Design Evolution</h2>
+          <p>
+            These WIP images show the search for Raizhen’s final logic: weapon shape, horn treatment, armor density,
+            tribal authority, RedShift sleeve visibility, and the balance between Oni brutality and Apostle canon.
+          </p>
+        </div>
+
+        <div class="wip-gallery">
+          <img src="./wips-1.png" alt="Raizhen design WIP 1" loading="lazy" decoding="async">
+          <img src="./wips-2.png" alt="Raizhen design WIP 2" loading="lazy" decoding="async">
+          <img src="./wips-3.png" alt="Raizhen design WIP 3" loading="lazy" decoding="async">
+          <img src="./wips-4.png" alt="Raizhen design WIP 4" loading="lazy" decoding="async">
+          <img src="./wips-5.png" alt="Raizhen design WIP 5" loading="lazy" decoding="async">
+          <img src="./wips-6.png" alt="Raizhen design WIP 6" loading="lazy" decoding="async">
+          <img src="./wips-7.png" alt="Raizhen design WIP 7" loading="lazy" decoding="async">
+          <img src="./wips-8.png" alt="Raizhen design WIP 8" loading="lazy" decoding="async">
+          <img src="./wips-9.png" alt="Raizhen design WIP 9" loading="lazy" decoding="async">
+          <img src="./wips-10.png" alt="Raizhen design WIP 10" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
